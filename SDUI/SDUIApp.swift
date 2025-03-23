@@ -9,9 +9,13 @@ import SwiftUI
 
 @main
 struct SDUIApp: App {
+    init() {
+        ComponentRegistryBuilder.registerAll()
+    }
+
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            HomeView()
         }
     }
 }

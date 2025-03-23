@@ -1,17 +1,5 @@
 import SwiftUI
 
-// MARK: - Modelo do Componente
-
-/// Modelo para o componente de Single Banner
-struct SingleBannerModel: ComponentModel {
-    let componentId: String
-    let imageUrl: String
-    let backgroundColor: String?
-    let action: ComponentActionModel?
-    
-    var id: String { componentId }
-}
-
 // MARK: - View do Componente
 
 struct SingleBannerView: View {
@@ -52,4 +40,3 @@ struct SingleBannerView: View {
         }
     }
 }
-

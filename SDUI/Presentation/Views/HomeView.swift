@@ -26,7 +26,7 @@ struct HomeView: View {
     }
 
     private func loadComponents() {
-        guard let url = URL(string: "http://localhost:8000/sdui/publish") else { return }
+        guard let url = URL(string: "http://localhost:8000/sdui/home") else { return }
         service.fetchComponents(from: url) { parsed in
             DispatchQueue.main.async {
                 self.components = parsed

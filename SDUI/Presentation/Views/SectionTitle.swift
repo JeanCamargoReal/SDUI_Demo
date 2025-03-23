@@ -1,15 +1,5 @@
 
 import SwiftUI
-/// Modelo para o título de seção
-struct SectionTitleModel: ComponentModel {
-    let componentId: String
-    let title: String             // Título principal (ex.: "Meus cartões")
-    let actionTitle: String?      // Texto do botão à direita (ex.: "Ver todos")
-    let action: ComponentActionModel? // Ação opcional ao clicar no botão
-    
-    var id: String { componentId }
-}
-
 
 struct SectionTitleView: View {
     let model: SectionTitleModel
