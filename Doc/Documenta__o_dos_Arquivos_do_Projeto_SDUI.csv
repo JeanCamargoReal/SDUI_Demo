@@ -1,0 +1,33 @@
+Arquivo / Pasta,Descrição
+SDUIApp.swift,Ponto de entrada da aplicação. Inicializa o app e registra os componentes via ComponentRegistryBuilder.
+ContentView.swift,Container principal da UI. Pode ser usado para navegação ou estrutura global.
+Domain/Protocols/ComponentProtocol.swift,Define o protocolo base para todos os componentes renderizáveis (Identifiable + Decodable).
+Domain/Protocols/ComponentActionProtocol.swift,Define o contrato para modelos de ação dos componentes.
+Domain/Entities/ParsedComponentEntity.swift,"Estrutura que representa um componente genérico parseado, unindo tipo e model."
+Domain/Models/ComponentActionModel.swift,Modelo de ação concreta com tipo e parâmetros.
+Domain/Models/GreetingHeaderModel.swift,Modelo para componente de cabeçalho com saudação.
+Domain/Models/SectionTitleModel.swift,"Modelo para títulos de seção, com título e ação opcional."
+Domain/Models/SingleBannerModel.swift,Modelo para um banner único com imagem e ação.
+Domain/Models/BannerCarouselModel.swift,Modelo para carrossel de banners.
+Domain/Models/CategoryCarouselModel.swift,Modelo para carrossel de categorias com ícone e ação.
+Domain/Models/BalanceCardModel.swift,Modelo para exibir saldo e moeda.
+Domain/Models/SpacerModel.swift,Modelo para criar espaços verticais.
+Data/Errors/ComponentError.swift,Enum de erros usados no parser de componentes.
+Data/Parsers/ComponentParser.swift,Classe responsável por parsear JSON em modelos dinâmicos registrados.
+Data/Protocols/ComponentParsingProtocol.swift,Protocolo que define o contrato para parsers de componentes.
+Data/Protocols/ComponentRegisteringProtocol.swift,Protocolo que define o contrato de registro dinâmico dos componentes.
+Data/Registry/ComponentRegistry.swift,Classe singleton que registra tipos de componentes e gera views com base neles.
+Infrastructure/Handlers/ActionHandler.swift,"Gerencia as ações dos componentes, como navegação ou deeplink."
+Infrastructure/Registry/ComponentRegistryBuilder.swift,Responsável por registrar todos os tipos de componentes e suas views.
+Infrastructure/Services/ComponentService.swift,Busca os dados de componentes no backend e os parseia para renderização.
+Presentation/Views/HomeView.swift,Tela principal que monta a UI dinâmica com os componentes recebidos.
+Presentation/Views/GreetingHeader.swift,"View para renderizar saudação com nome, cores e avatar."
+Presentation/Views/SectionTitle.swift,View para título de seção com botão opcional à direita.
+Presentation/Views/SingleBanner.swift,View para banner clicável com imagem de fundo.
+Presentation/Views/BannerCorousel.swift,View para carrossel horizontal de banners.
+Presentation/Views/CategoryCarousel.swift,View para carrossel horizontal de categorias com ícones.
+Presentation/Views/BalanceCard.swift,View que mostra o saldo disponível do usuário.
+Presentation/Views/Spacer.swift,View que gera espaçamento vertical entre os componentes.
+Presentation/Views/ComponentText.swift,"View utilitária que renderiza textos com cor, fonte e peso configuráveis."
+Assets.xcassets/,"Contém os recursos visuais do app como ícones, cores e imagens."
+Preview Content/,Conteúdo usado apenas para SwiftUI Preview no Xcode.
